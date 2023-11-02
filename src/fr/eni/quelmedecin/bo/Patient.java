@@ -41,7 +41,6 @@ public class Patient {
 
 		System.out.println("Commentaires : " + comm);
 		System.out.println(this.getAdresse().toString());
-		//System.out.println(adresse.toString());
 	}
 
 	public Adresse getAdresse() {

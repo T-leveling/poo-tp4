@@ -10,9 +10,7 @@ public class MedecinGeneraliste {
 	private Adresse adresse;
 	private ArrayList<Creneau> creneaux;
 
-	public ArrayList<Creneau> getCreneaux() {
-		return creneaux;
-	}
+
 
 	public MedecinGeneraliste(String nom, String prenom, String numTel, Adresse adresse) {
 		this.nom = nom;
@@ -31,6 +29,10 @@ public class MedecinGeneraliste {
 			System.out.println(creneau);
 		}
 
+	}
+	
+	public ArrayList<Creneau> getCreneaux() {
+		return creneaux;
 	}
 
 	public void ajouterCreneau(Creneau creneau) {
