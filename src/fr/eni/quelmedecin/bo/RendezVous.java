@@ -39,7 +39,7 @@ public class RendezVous {
 	}
 
 	public void afficher() {
-		System.out.println("Rendez-vous du "  + LocalDate.now()+ " avec le Docteur "+ this.creneau.getMedecin().getNom()+ " pour " + this.patient.toString());
+		System.out.println("Rendez-vous du " + date + " \navec le Docteur " + this.creneau.getMedecin().getNom()+ " \npour " + patient.toString());
 	}
 	
 }

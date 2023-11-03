@@ -28,6 +28,18 @@ public class Patient {
 		this.adresse = adresse;
 	}
 
+	@Override
+	public String toString() {
+		var comm = commentaires;
+		if (commentaires == null || commentaires.isBlank())
+			comm = "[aucun commentaire]";
+		return nom + " " + prenom + "\nTéléphone : " + numeroDeTelephone + "\nSexe : "
+				+ (sexe == 'F' ? "Féminin" : "Masculin") + "\nNuméro de Sécurité Sociale : " 
+				+ numSecu + "\nDate de naissance : " + dateNaissance 
+				+ "\nCommentaires : " + comm
+				+ "\nAdresse : " + adresse;
+	}
+
 	public void afficher() {
 		System.out.println(nom.toUpperCase() + " " + prenom);
 		System.out.println("Téléphone : " + numeroDeTelephone);
